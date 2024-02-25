@@ -1,0 +1,54 @@
+.pages {
+  padding: 30px 0;
+  width: 100%;
+
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.6rem;
+
+    .page-number {
+      border: none;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      background: none;
+    }
+
+    .page-digit {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      a {
+        color: #474f54;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.1;
+
+        &.active {
+          background: #A0AEC026;
+          border-radius: 3px;
+          color: #1e1e1e;
+          padding: 7px 8px;
+        }
+
+        &.inactive {
+          color: #b4b4b4;
+        }
+      }
+    }
+
+    .page-next {
+      border: none;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      background: none;
+    }
+  }
+}

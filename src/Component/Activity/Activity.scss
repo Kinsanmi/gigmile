@@ -1,0 +1,123 @@
+.activity {
+  flex: 1;
+  padding: 20px 40px 20px 0;
+
+  .act-feed {
+    border: 1px solid #e6e7e9;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px #e6e7e9;
+    margin-bottom: 30px;
+
+    .act-line {
+      border-bottom: 1px solid #eef0f6;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .act-number {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+
+        h2 {
+          font-size: 16px;
+          color: #1e1e1e;
+          font-weight: 700;
+          line-height: 1.2;
+          letter-spacing: 0.3px;
+          text-transform: capitalize;
+        }
+
+        p {
+          background: #e25c5c;
+          color: #fff;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+        }
+      }
+
+      .views h3 {
+        color: #1db385;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.3px;
+      }
+    }
+
+    .ride {
+      padding: 15px 15px;
+
+      .ride-asset {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .bell {
+          border-radius: 50%;
+          border: 1px solid #d9dade;
+          background: #fafafa;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .icon {
+            font-size: 17px;
+            color: #dd425a;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+
+          .contact {
+            font-size: 17px;
+            color: #000;
+          }
+
+          .network {
+            color: #f9883a;
+            font-size: 17px;
+          }
+        }
+
+        .quest {
+          h2 {
+            color: #474f54;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: 0.2px;
+            margin-bottom: 5px;
+          }
+
+          h5 {
+            color: #a0aec0;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:600px) {
+  .activity {
+    display: none;
+}
+}

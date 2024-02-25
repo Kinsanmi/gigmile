@@ -1,0 +1,193 @@
+.active {
+  padding: 20px 0;
+  .act-feed {
+    border: 1px solid #e6e7e9;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px #e6e7e9;
+    margin-bottom: 30px;
+
+    .act-line {
+      border-bottom: 1px solid #eef0f6;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .act-number {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+
+        h2 {
+          font-size: 16px;
+          color: #1e1e1e;
+          font-weight: 700;
+          line-height: 1.2;
+          letter-spacing: 0.3px;
+          text-transform: capitalize;
+        }
+
+        p {
+          background: #ef2222;
+          color: #fff;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .repayment {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+
+      .cap-names {
+        th {
+          color: #a0aec0;
+          font-size: 14px;
+          text-transform: capitalize;
+          text-align: left;
+          font-weight: 400;
+          letter-spacing: 0.3px;
+          line-height: 1.2;
+          margin-bottom: 15px;
+          padding: 10px 25px;
+        }
+      }
+
+      .table-list {
+        td {
+          padding: 10px 20px;
+        }
+        .list-img {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+
+          img {
+            max-width: 24px;
+          }
+
+          h2 {
+            font-size: 16px;
+            color: #1e1e1e;
+            font-weight: 600;
+            text-transform: capitalize;
+            letter-spacing: 0.4px;
+          }
+        }
+
+        .services {
+          h1 {
+            font-size: 16px;
+            color: #1e1e1e;
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: 0.3px;
+          }
+        }
+
+        .amount {
+          h2 {
+            font-size: 16px;
+            color: #1e1e1e;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: 0.3px;
+          }
+        }
+
+        .date {
+          h2 {
+            font-size: 16px;
+            color: #1e1e1e;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: 0.3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .request {
+    padding: 15px 0 15px 15px;
+  }
+
+  .active .act-feed {
+    margin-bottom: 20px;
+    width: 550px;
+    overflow-x: scroll;
+  }
+
+  .repayment {
+    width: 100%;
+    table-layout: auto;
+  }
+
+  .repayment thead tr th,
+  .repayment tbody tr td {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .active .act-feed {
+    margin-bottom: 20px;
+    width: 460px;
+    overflow-x: scroll;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .active .act-feed {
+    margin-bottom: 20px;
+    width: 340px;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .active .act-feed {
+    margin-bottom: 20px;
+    width: 330px;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .active .act-feed {
+    margin-bottom: 10px;
+    width: 310px;
+    overflow-x: scroll;
+  }
+
+  .active .act-feed .repayment .table-list .list-img h2 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .active .act-feed .act-line .act-number h2 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .active .act-feed .act-line .act-number p {
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
+  }
+  .active .act-feed .repayment .table-list .services h1 {
+    font-size: 15px;
+  }
+  .active .act-feed .repayment .table-list .amount h2 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}

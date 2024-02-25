@@ -1,0 +1,205 @@
+.pending {
+  margin-top: 30px;
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #1e1e1e;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+    }
+
+    .filter-search {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+
+      .btn {
+        border: 1px solid #d9dade;
+        padding: 12px 16px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+
+        input {
+          outline: none;
+          border: none;
+          width: 180px;
+          font-size: 15px;
+
+          &::placeholder {
+            color: #a0aec0;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .filter {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        border: 1px solid #d9dade;
+        padding: 12px 16px;
+        border-radius: 50px;
+
+        h3 {
+          font-size: 15px;
+          color: #1e1e1e;
+          font-weight: 500;
+          letter-spacing: 0.3px;
+        }
+      }
+    }
+  }
+
+  .active-list {
+    border: 1px solid #d9dade;
+    border-radius: 5px;
+    height: auto;
+
+    .range {
+      border-bottom: 1px solid #d9dade;
+      padding: 20px 0px 0 30px;
+
+      .range-type {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+
+        h2 {
+          font-size: 1em;
+          text-transform: capitalize;
+          color: #1e1e1e;
+          font-weight: 600;
+          position: relative;
+          padding: 0 0px 5px 0;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #1db385;
+            width: 100%;
+            height: 2px;
+            border-radius: 50px;
+          }
+        }
+
+        h3 {
+          font-size: 1em;
+          text-transform: capitalize;
+          color: #a0aec0;
+          font-weight: 600;
+          position: relative;
+          padding: 0 0px 5px 0;
+        }
+      }
+    }
+
+    .repayment {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+
+      .cap-names {
+        th {
+          color: #a0aec0;
+          font-size: 14px;
+          text-transform: capitalize;
+          text-align: left;
+          font-weight: 400;
+          letter-spacing: 0.3px;
+          line-height: 1.2;
+          margin-bottom: 15px;
+          padding: 10px 0 0 30px;
+        }
+      }
+
+      .table-list {
+        td {
+          padding: 10px 30px;
+          border-bottom: 1px solid #d9dade52;
+        }
+        .list-img {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+
+          img {
+            max-width: 24px;
+          }
+
+          h2 {
+            font-size: 14px;
+            color: #1e1e1e;
+            font-weight: 500;
+            text-transform: capitalize;
+            letter-spacing: 0.4px;
+          }
+        }
+
+        .value {
+          h2 {
+            font-size: 14px;
+            color: #1e1e1e;
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: 0.3px;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pending .search {
+    flex-wrap: wrap;
+  }
+  .pending .search h2 {
+    display: none;
+  }
+  .pending .search .filter-search {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 10px;
+  }
+  .pending .search .filter-search .btn {
+    padding: 10px 14px;
+  }
+  .pending .search .filter-search .filter {
+    padding: 10px 14px;
+  }
+  .pending .search .filter-search .filter h3 {
+    font-size: 14px;
+  }
+
+  .pending .active-list {
+    width: 550px;
+  }
+  .active-list .scroll {
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  .repayment thead,
+  .repayment tbody {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .pending .search .filter-search .filter {
+    display: none;
+  }
+}

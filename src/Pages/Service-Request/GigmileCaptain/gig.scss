@@ -1,0 +1,55 @@
+.request-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  h2 {
+    font-size: 14px;
+    color: #1e1e1e;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+    background: #fafafa;
+    border-radius: 20px;
+    padding: 8px 10px;
+
+    &:nth-child(2) {
+      background-color: #fafafa;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pending .active-list {
+    width: 570px;
+    overflow-x: scroll;
+  }
+
+
+  .repayment thead,
+  .repayment tbody {
+    white-space: nowrap;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .pending .active-list {
+    width: 450px;
+  }
+}
+
+
+@media screen and (max-width:400px) {
+  .pending .active-list {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .pending .active-list {
+    width: 310px;
+  }
+}

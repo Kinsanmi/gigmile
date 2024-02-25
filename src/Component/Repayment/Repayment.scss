@@ -1,0 +1,120 @@
+.active-list {
+  .act-feed {
+    .act-line {
+      .act-number {
+        p {
+          background: #a0aec0;
+          color: #fff;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .repayment {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+
+      .cap-names {
+        th {
+          color: #a0aec0;
+          font-size: 14px;
+          text-transform: capitalize;
+          text-align: left;
+          font-weight: 400;
+          letter-spacing: 0.3px;
+          line-height: 1.2;
+          margin-bottom: 15px;
+          padding: 10px 25px;
+        }
+      }
+
+      .table-list {
+        td {
+          padding: 10px 20px;
+        }
+        .list-img {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+
+          img {
+            max-width: 24px;
+          }
+
+          h2 {
+            font-size: 16px;
+            color: #1e1e1e;
+            font-weight: 600;
+            text-transform: capitalize;
+            letter-spacing: 0.4px;
+          }
+        }
+
+        .services {
+          h1 {
+            font-size: 16px;
+            color: #1e1e1e;
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: 0.3px;
+          }
+        }
+
+        .amount {
+          h2 {
+            font-size: 16px;
+            color: #1e1e1e;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: 0.3px;
+          }
+        }
+
+        .date {
+          h2 {
+            font-size: 16px;
+            color: #1e1e1e;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: 0.3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 320px) {
+  .active-list .act-feed .repayment .table-list .list-img h2 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .active-list .act-feed .repayment .table-list .list-img h2 {
+    font-size: 15px;
+  }
+
+  .active-list .act-feed .repayment .table-list .amount h2 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .active-list .act-feed .repayment .table-list .date h2 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .active-list .act-feed .act-line .act-number p {
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
+  }
+}

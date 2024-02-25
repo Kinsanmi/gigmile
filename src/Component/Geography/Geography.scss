@@ -1,0 +1,124 @@
+.map-img{
+  padding: 15px;
+
+  img{
+      width: 100%;
+  }
+
+  .map-location{
+
+      .country{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: #474F54;
+          margin: 15px 0;
+
+          .country-list{
+              h1{
+                  color: #474F54;
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 1.1;
+                  letter-spacing: 0.4px;
+              }
+          }
+
+          .country-item{
+              h3{
+                  color: #474F54;
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 1.1;
+                  letter-spacing: 0.4px;
+              }
+          }
+      }
+
+      .location{
+          .locate-country{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 8px;
+
+              .cap-list{
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+
+                  p{
+                      background: #F9883A4D;
+                      min-height: 22px;
+                      min-width: 22px;
+                      border-radius: 50px;
+                      z-index: 4;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      box-shadow: 1px 1px 10px #F9883A4D;
+
+
+                      div{
+                          background-color: #F9883A;
+                          width: 16px;
+                          height: 16px;
+                          border-radius: 50%;
+                          z-index: -1;
+                      }
+                  }
+
+                  h2{
+                      font-size: 16px;
+                      color: #1E1E1E;
+                      font-weight: 500;
+                      letter-spacing: 0.4px;
+                  }
+              }
+
+              .score{
+                  display: flex;
+                  align-items: center;
+                  gap: 0.3rem;
+
+                  h3{
+                      color: #000000;
+                      font-size: 16px;
+                      font-weight: 500;
+                      letter-spacing: 0.3px;
+                      line-height: 1.2;
+                  }
+
+                  .arrow{
+                      font-size: 24px;
+                      color: #1DB385;
+                  }
+
+                  .down-arrow{
+                      font-size: 24px;
+                      color: #E25C5C;
+                  }
+
+                  h4{
+                      color: #1DB385;
+                      font-size: 16px;
+                      font-weight: 500;
+                      letter-spacing: 0.4px;
+                      line-height: 1.1;
+                  }
+
+                  h5{
+                      color: #E25C5C;
+                      font-size: 16px;
+                      font-weight: 500;
+                      letter-spacing: 0.4px;
+                      line-height: 1.1;
+                  }
+
+              }
+
+
+          }
+      }
+  }
+}

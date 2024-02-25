@@ -1,0 +1,119 @@
+.mobile {
+  flex: 2.5;
+  padding: 20px 0 40px 40px;
+
+  .request-list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .list-icon {
+      flex: 1;
+      border: 1px solid #e6e7e9;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 140px;
+      border-radius: 6px;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid #1db385;
+
+        .note {
+          color: #1db385;
+        }
+
+        .list-details p {
+          color: #474f54;
+        }
+      }
+
+      .note {
+        margin-bottom: 0.7rem;
+        font-size: 35px;
+        color: #a7a8a8;
+        transition: 0.2s ease-in-out;
+      }
+
+      .list-details {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.6rem;
+
+        h3 {
+          font-size: 20px;
+          color: #1e1e1e;
+          font-weight: 600;
+          line-height: 1.2;
+        }
+
+        p {
+          font-size: 12px;
+          color: #a7a8a8;
+          font-weight: 300;
+          letter-spacing: 0.6px;
+          text-transform: capitalize;
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .mobile .request-list {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 30px;
+  }
+
+  .mobile .request-list .list-icon {
+    width: 45%;
+    flex-basis: auto;
+  }
+
+  .mobile .request-list .list-icon .note {
+    font-size: 25px;
+  }
+  .mobile .request-list .list-icon .list-details h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobile .request-list {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .mobile .request-list .list-icon {
+    width: 100%;
+    flex-basis: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .mobile {
+    padding: 5px;
+  }
+
+  .mobile .request-list {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .mobile .request-list .list-icon {
+    width: 100%;
+    flex-basis: auto;
+  }
+}

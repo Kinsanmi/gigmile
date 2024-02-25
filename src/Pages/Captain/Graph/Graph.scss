@@ -1,0 +1,121 @@
+.apexcharts-zoomout-icon {
+  margin-right: 3px;
+  display: none;
+}
+
+.apexcharts-zoomin-icon,
+.apexcharts-zoomout-icon {
+  transform: scale(0.7);
+  display: none;
+}
+
+.apexcharts-pan-icon {
+  transform: scale(0.62);
+  position: relative;
+  left: 1px;
+  top: 0;
+  display: none;
+}
+
+.apexcharts-menu-icon,
+.apexcharts-reset-icon,
+.apexcharts-zoom-icon {
+  transform: scale(0.85);
+  display: none;
+}
+
+.capital {
+  padding: 0px 15px;
+
+  .chart-donut {
+    height: 75px;
+    border-bottom: 1px solid #eef0f6;
+    padding: 10px 0 0 0;
+
+    .donut {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 6px;
+      span {
+        background: rgba(29, 179, 134, 0.178);
+        padding: 4px;
+        border-radius: 3px;
+
+        img {
+          width: 25px;
+        }
+      }
+
+      h3 {
+        font-size: 16px;
+        color: #1e1e1e;
+        font-weight: 600;
+        line-height: 1.1;
+        letter-spacing: 0.4px;
+      }
+    }
+
+    p {
+      color: #a7a8a8;
+      font-size: 15px;
+      text-transform: capitalize;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+
+      li {
+        margin-left: 5px;
+        list-style: disc;
+      }
+    }
+  }
+
+  .donut-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 15px;
+
+    .contact {
+      font-size: 24px;
+      color: #1db385;
+    }
+
+    h2 {
+      font-size: 15px;
+      color: #474f54;
+      text-transform: capitalize;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+
+      span {
+        margin-left: 8px;
+        font-size: 20px;
+        color: #1e1e1e;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cap .active-cap .graph {
+    width: 450px;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cap .active-cap .graph {
+    width: 350px;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cap .active-cap .graph {
+    width: 310px;
+    overflow-x: scroll;
+  }
+}
