@@ -13,12 +13,14 @@ export const Layout = () => {
     document.body.classList.toggle("sidebar-open", !sideBar);
   };
   return (
-    <div className="home">
-      <Sidebar sideBar={sideBar} sideBarNav={sideBarNav} />
-      <div className="navbar">
-        <Navbar sideBar={sideBar} sideBarNav={sideBarNav} />
-        <Routers />
+    <section>
+      <div className="home">
+        <Sidebar sideBar={sideBar} sideBarNav={sideBarNav} />
+        <div className="navbar">
+          <Navbar sideBar={sideBar} sideBarNav={sideBarNav} />
+          <Routers />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
